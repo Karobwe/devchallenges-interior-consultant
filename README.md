@@ -28,6 +28,7 @@
 
 - [Overview](#overview)
   - [Built With](#built-with)
+  - [Run in local](#run-in-local)
 - [Features](#features)
 - [Contact](#contact)
 - [Acknowledgements](#acknowledgements)
@@ -52,6 +53,20 @@ Introduce your projects by taking a screenshot or a gif. Try to tell visitors a 
 - [React](https://reactjs.org/)
 - [Vue.js](https://vuejs.org/)
 - [Tailwind](https://tailwindcss.com/)
+
+### Run in local
+
+```shell
+yarn install
+
+# launch Encore's dev server
+yarn dev-server
+
+# load the project in local server
+yarn start
+
+# both last previous commands should be executed in two different terminal
+```
 
 ## Features
 

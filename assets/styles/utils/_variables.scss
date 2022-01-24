@@ -1,0 +1,68 @@
+// * * * * * *
+// Typography
+// * * * * * *
+
+// font-family
+$font-main: 'Crimson Pro', serif;
+$font-accent: 'Lora', serif;
+$font-default: 'Montserrat', sans-serif;
+
+// font-weight
+//$font-thin: 100;
+$font-extralight: 200;
+//$font-light: 300;
+$font-normal: 400;
+$font-medium: 500;
+$font-semibold: 600;
+$font-bold: 700;
+//$font-extrabold: 800;
+//$font-black: 900;
+
+// font-size
+$text-xs: 0.625em;    // 10px
+$text-sm: 0.75em;     // 12px
+$text-md: 0.875em;    // 14px
+$text-base: 1em;
+$text-lg: 1.125em;    // 18px
+$text-xl: 1.5em;      // 24px
+$text-2xl: 2.25em;    // 36px
+$text-3xl: 3em;       // 48px
+
+// line-height
+$leading-xs: 0.75;                // 12px
+$leading-snug: $leading-xs;       // 12px
+$leading-sm: 0,9375;              // 15px
+$leading-tight: $leading-sm;      // 15px
+$leading-md: 1em;                 // 16px
+$leading-normal: 1em;             // 16px
+$leading-lg: 1,0625em;            // 17px
+$leading-xl: 1,375em;             // 22px
+$leading-2xl: 1,4375em;           // 23px
+$leading-3xl: 1,8125em;           // 29px
+$leading-3xm: 1,9375em;           // 31px
+$leading-4xl: 2,875em;            // 46px
+$leading-relaxed: $leading-4xl;   // 46px
+$leading-5xl: 3.8125em;           // 61px
+$leading-loose: $leading-5xl;     // 61px
+
+// * * * *
+// Colors
+// * * * *
+
+$black:     rgba(24, 23, 25, 1);
+$white:     rgba(255, 255, 255, 1);
+$grey:      rgba(169, 169, 169, 1);
+$dark-grey: rgba(130, 130, 130, 1);
+
+// * * * * * *
+// box-shadow
+// * * * * * *
+$box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+// * * * *
+// Layout
+// * * * *
+
+$body-margin-x: 0.75em;       // 12px
+$body-margin-x-desktop: 4.8125em; // 77px
+$body-flex-gap: 2.375em;    // 38px

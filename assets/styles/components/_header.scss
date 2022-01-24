@@ -1,0 +1,32 @@
+@import "../utils/variables";
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .logo {
+    max-width: 103px;
+    padding: 7px;
+    border: solid 1px $white;
+
+    font-family: $font-main;
+    font-size: $text-md;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: $leading-2xl;
+  }
+
+  a {
+    text-decoration: none;
+    color: $white;
+  }
+
+  .nav-link {
+    display: none;
+  }
+
+  .material-icons {
+    font-size: $text-2xl;
+  }
+}

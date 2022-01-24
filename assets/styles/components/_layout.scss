@@ -1,0 +1,20 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+.container {
+  margin: 20px $body-margin-x 24px;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: $body-flex-gap;
+
+
+  @include media-gte-lg {
+    margin: 0 $body-margin-x-desktop;
+  }
+
+  main {
+    flex-grow: 2;
+  }
+}

@@ -1,0 +1,71 @@
+@import "../utils/variables";
+
+.hero {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+
+  .description {
+    h1 {
+      font-family: $font-accent;
+      font-size: $text-2xl;
+      font-weight: $font-semibold;
+      line-height: $leading-4xl;
+    }
+
+    p {
+      font-size: $text-md;
+      line-height: $leading-lg;
+    }
+
+    a {
+      font-size: $text-md;
+      font-weight: $font-bold;
+      line-height: $leading-lg;
+      text-decoration: none;
+      color: $white;
+    }
+  }
+
+  .hero-picture {
+    width: 100%;
+  }
+
+  .testimonial {
+    position: absolute;
+    width: 300px;
+    height: 138px;
+    left: 40px;
+    bottom: -70px;
+    padding: 20px;
+
+    background-color: $black;
+    box-shadow: $box-shadow;
+  }
+
+  .testimonial-picture {
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+  }
+
+  .testimonial-username {
+    font-size: $text-sm;
+    font-weight: $font-semibold;
+    line-height: $leading-sm;
+  }
+
+  .testimonial-job {
+    font-size: $text-xs;
+    line-height: $leading-xs;
+    color: $dark-grey;
+  }
+
+  .testimonial-description {
+    font-family: $font-accent;
+    font-size: $text-lg;
+    font-weight: $font-bold;
+    line-height: $leading-2xl;
+  }
+}

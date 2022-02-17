@@ -28,5 +28,8 @@
     "sass-loader": "12.0.0",
     "serve": "^13.0.0",
     "webpack-notifier": "1.6.0"
+  },
+  "dependencies": {
+    "core-js": "^3.21.0"
   }
 }

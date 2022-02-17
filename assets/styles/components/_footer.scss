@@ -1,0 +1,15 @@
+@import "../utils/variables";
+
+footer {
+  text-align: center;
+
+  p {
+    font-size: $text-md;
+    line-height: $leading-lg;
+    color: $grey;
+
+    span {
+      font-weight: $font-semibold;
+    }
+  }
+}

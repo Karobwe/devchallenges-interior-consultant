@@ -5,8 +5,13 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr;
+  grid-row-gap: 38px;
 
   .description {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 25px;
+
     h1 {
       font-family: $font-accent;
       font-size: $text-2xl;
@@ -19,12 +24,17 @@
       line-height: $leading-lg;
     }
 
-    a {
+    .more-link {
       font-size: $text-md;
       font-weight: $font-bold;
       line-height: $leading-lg;
       text-decoration: none;
       color: $white;
+    }
+
+    .more-link::after {
+      content: '\2192';
+      margin-left: 15px;
     }
   }
 
@@ -35,13 +45,23 @@
   .testimonial {
     position: absolute;
     width: 300px;
-    height: 138px;
-    left: 40px;
-    bottom: -70px;
-    padding: 20px;
+    max-height: 138px;
+    left: 2.7em;
+    bottom: -5.7em;
+    padding: 13px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 
     background-color: $black;
     box-shadow: $box-shadow;
+  }
+
+  .testimonial-profile {
+    display: flex;
+    align-items: center;
+    column-gap: 14px;
   }
 
   .testimonial-picture {
@@ -51,6 +71,7 @@
   }
 
   .testimonial-username {
+    margin-bottom: 5px;
     font-size: $text-sm;
     font-weight: $font-semibold;
     line-height: $leading-sm;
@@ -63,9 +84,17 @@
   }
 
   .testimonial-description {
+    margin-top: 20px;
+
     font-family: $font-accent;
     font-size: $text-lg;
     font-weight: $font-bold;
     line-height: $leading-2xl;
+
+    // Force line break (see https://css-tricks.com/injecting-line-break/)
+    span::before {
+      content: "";
+      display: block;
+    }
   }
 }

@@ -1,6 +1,7 @@
-/*
- * Main JavaScript file
- */
-
-// any CSS you import will output into a single css file (app.css in this case)
 import './styles/app.scss';
+import responsiveMenu from './js/responsive-menu';
+
+document.addEventListener("DOMContentLoaded", function(){
+    console.log("DOM has been fully loaded and parsed.");
+    responsiveMenu();
+});

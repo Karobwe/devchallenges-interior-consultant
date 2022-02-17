@@ -10,46 +10,60 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="build/app.css">
-    <script src="build/app.js" defer></script>
+    <script src="build/runtime.js" ></script>
+    <script src="build/vendors-node_modules_core-js_modules_es_array_for-each_js-node_modules_core-js_modules_es_obj-7bb33f.js" ></script>
+    <script src="build/app.js" ></script>
     <title>Devchallenges</title>
   </head>
   <body>
-    <div class="container">
-      <header>
-        <a href="#" class="logo">This Interior</a>
-        <nav>
-          <a href="#" class="nav-link">Home</a>
-          <a href="#" class="nav-link">Collection</a>
-          <a href="#" class="nav-link">About</a>
-          <a href="#" class="nav-link">Contact</a>
-          <a href="#" class="hamburger"><span class="material-icons">menu</span></a>
-        </nav>
-      </header>
-
-      <main>
-        <section class="hero">
-          <div class="description">
-            <h1>Modern interior</h1>
-            <p>A full-Service residential & commercial interior design and staging company offering professional organizing & eco-services.</p>
-            <a href="#">Read more</a>
-          </div>
-          <img src="build/images/photo1.png" alt="" class="hero-picture">
-          <div class="testimonial">
-            <div class="testimonial-profile">
-              <img src="build/images/photo2.png" alt="" class="testimonial-picture">
-              <div class="testimonial-user">
-                <h3 class="testimonial-username">Aliza Webber</h3>
-                <h4 class="testimonial-job">Interior designer</h4>
-              </div>
+      <div class="container">
+        <header>
+          <nav class="menu">
+            <a class="menu-brand" href="#">This Interior</a>
+            <button class="menu-toggler" type="button">
+              <span class="material-icons">menu</span>
+            </button>
+            <div class="menu-collapse">
+              <ul>
+                <li class="active"><a class="menu-link" href="#">Home</a></li>
+                <li><a class="menu-link" href="#">Collection</a></li>
+                <li><a class="menu-link" href="#">About</a></li>
+                <li><a class="menu-link" href="#">Contact</a></li>
+              </ul>
             </div>
-            <p class="testimonial-description">Designed in 2020 by Aliza Webber</p>
-          </div>
-        </section>
-      </main>
+          </nav>
+        </header>
 
-      <footer>
-        <p>created by <span>Karobwe</span> - devChallenges.io</p>
-      </footer>
-    </div>
+        <main>
+          <section class="hero">
+            <div class="description">
+              <h1>Modern interior</h1>
+              <p>
+                A full-Service residential &<br>
+                commercial interior design and <br>
+                staging company offering <br>
+                professional organizing & <br>
+                eco-services.
+              </p>
+              <a class="more-link" href="#">Read more</a>
+            </div>
+            <img src="build/images/photo1.png" alt="" class="hero-picture">
+            <div class="testimonial">
+              <div class="testimonial-profile">
+                <img src="build/images/photo2.png" alt="" class="testimonial-picture">
+                <div class="testimonial-user">
+                  <h3 class="testimonial-username">Aliza Webber</h3>
+                  <h4 class="testimonial-job">Interior designer</h4>
+                </div>
+              </div>
+              <p class="testimonial-description">Designed in 2020 by <span>Aliza Webber</span></p>
+            </div>
+          </section>
+        </main>
+
+        <footer>
+          <p>created by <span>Karobwe</span> - devChallenges.io</p>
+        </footer>
+      </div>
   </body>
 </html>

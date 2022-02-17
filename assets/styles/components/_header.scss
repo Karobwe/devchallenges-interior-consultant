@@ -1,32 +1,67 @@
 @import "../utils/variables";
 
 header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 28px;
 
-  .logo {
-    max-width: 103px;
-    padding: 7px;
-    border: solid 1px $white;
+    .menu-brand {
+      max-width: 103px;
+      padding: 8px;
 
-    font-family: $font-main;
-    font-size: $text-md;
-    text-align: center;
-    text-transform: uppercase;
-    line-height: $leading-2xl;
-  }
+      font-family: $font-main;
+      font-size: $text-md;
+      text-align: center;
+      text-transform: uppercase;
+      line-height: $leading-2xl;
 
-  a {
-    text-decoration: none;
-    color: $white;
-  }
+      color: grey;
+      border: solid 1px $white;
+    }
 
-  .nav-link {
-    display: none;
-  }
+    .menu-toggler {
+      position: absolute;
+      right: 12px;
+      border: none;
+      color: $white;
+      background: none;
+      z-index: 100;
+    }
 
-  .material-icons {
-    font-size: $text-2xl;
+    .menu-collapse {
+      display: none;
+    }
+
+    .menu-collapse.opened {
+      position: absolute;
+      z-index: 90;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $black;
+      width: 100%;
+      height: 100%;
+
+      li {
+        margin: 32px auto;
+      }
+
+      li.active {
+        text-decoration: underline;
+        text-underline-position: under;
+        text-underline-offset: 8px;
+      }
+    }
+
+    .menu-link {
+      text-decoration: none;
+      color: $white;
+    }
+
+    .material-icons {
+      font-size: $text-2xl;
+    }
   }
 }

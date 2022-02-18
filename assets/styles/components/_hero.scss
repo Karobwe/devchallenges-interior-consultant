@@ -1,4 +1,5 @@
 @import "../utils/variables";
+@import "../utils/mixins";
 
 .hero {
   position: relative;
@@ -7,21 +8,43 @@
   grid-template-rows: auto 1fr;
   grid-row-gap: 38px;
 
+  @include media-gte-78em {
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: initial;
+    grid-template-areas:
+    "hero-description hero-picture"
+    ". hero-testimonial";
+  }
+
   .description {
     display: grid;
     grid-template-columns: 1fr;
     grid-row-gap: 25px;
+
+    @include media-gte-78em {
+      grid-area: hero-description;
+    }
 
     h1 {
       font-family: $font-accent;
       font-size: $text-2xl;
       font-weight: $font-semibold;
       line-height: $leading-4xl;
+
+      @include media-gte-78em {
+        font-size: $text-3xl;
+        line-height: $leading-loose;
+      }
     }
 
     p {
       font-size: $text-md;
       line-height: $leading-lg;
+
+      @include media-gte-78em {
+        font-size: $text-xl;
+        line-height: $leading-3xl;
+      }
     }
 
     .more-link {
@@ -30,6 +53,11 @@
       line-height: $leading-lg;
       text-decoration: none;
       color: $white;
+
+      @include media-gte-78em {
+        font-size: $text-lg;
+        line-height: $leading-xl;
+      }
     }
 
     .more-link::after {
@@ -40,6 +68,10 @@
 
   .hero-picture {
     width: 100%;
+
+    @include media-gte-78em {
+      grid-area: hero-picture;
+    }
   }
 
   .testimonial {
@@ -50,6 +82,7 @@
     left: -1em;
     bottom: 5em;
     padding: 13px 20px;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -57,6 +90,17 @@
 
     background-color: $black;
     box-shadow: $box-shadow;
+
+    @include media-gte-78em {
+      width: 410px;
+      height: 190px;
+      left: -2em;
+      bottom: 6.7em;
+    }
+
+    @include media-gte-78em {
+      grid-area: hero-testimonial;
+    }
   }
 
   .testimonial-profile {
@@ -69,6 +113,11 @@
     width: 36px;
     height: 36px;
     border-radius: 100%;
+
+    @include media-gte-78em {
+      width: 50px;
+      height: 50px;
+    }
   }
 
   .testimonial-username {
@@ -76,12 +125,27 @@
     font-size: $text-sm;
     font-weight: $font-semibold;
     line-height: $leading-sm;
+
+    @include media-gte-78em {
+      font-size: $text-md;
+      line-height: $leading-lg;
+    }
   }
 
   .testimonial-job {
     font-size: $text-xs;
     line-height: $leading-xs;
     color: $dark-grey;
+
+    @include media-gte-78em {
+      font-size: $text-sm;
+      line-height: $leading-tight;
+
+      @include media-gte-78em {
+        font-size: $text-xl;
+        line-height: $leading-3xl;
+      }
+    }
   }
 
   .testimonial-description {

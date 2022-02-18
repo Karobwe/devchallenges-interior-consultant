@@ -1,6 +1,6 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center">{Your project name}</h1>
+<h1 align="center">Interior Consultant</h1>
 
 <div align="center">
    Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://vigilant-bell-9f7436.netlify.app/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://github.com/Karobwe/devchallenges-interior-consultant">
       Solution
     </a>
     <span> | </span>
@@ -37,22 +37,19 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![screenshot](./assets/images/screenshot.jpg)
 
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
+Checkout the live demo on [Netlify](https://vigilant-bell-9f7436.netlify.app/).
 
-- Where can I see your demo?
-- What was your experience?
-- What have you learned/improved?
-- Your wisdom? :)
+This time Encore helped me to organizing files but I lost lot of time on a problem I already met: script not loading because I forgot to include `runtime.js` and vendors script manually. 
 
 ### Built With
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
-- [React](https://reactjs.org/)
-- [Vue.js](https://vuejs.org/)
-- [Tailwind](https://tailwindcss.com/)
+- [Webpack Encore](https://symfony.com/doc/current/frontend.html)
+- [SASS](https://sass-lang.com/)
+- Little bit of Vanilla Js
 
 ### Run in local
 
@@ -78,12 +75,14 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 <!-- This section should list any articles or add-ons/plugins that helps you to complete the project. This is optional but it will help you in the future. For exmpale -->
 
-- [Steps to replicate a design with only HTML and CSS](https://devchallenges-blogs.web.app/how-to-replicate-design/)
-- [Node.js](https://nodejs.org/)
-- [Marked - a markdown parser](https://github.com/chjj/marked)
+- [How to increase the gap between text and underlining in CSS](https://stackoverflow.com/questions/1734618/how-to-increase-the-gap-between-text-and-underlining-in-css)
+- [Holy Grid Guide](https://css-tricks.com/snippets/css/complete-guide-grid/)
+- [Holy Flexbox Guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- [Injecting a Line Break](https://css-tricks.com/injecting-line-break/)
+- [Clamping a Number](https://css-tricks.com/snippets/sass/clamping-number/)
 
 ## Contact
 
-- Website [your-website.com](https://{your-web-site-link})
-- GitHub [@your-username](https://{github.com/your-usermame})
-- Twitter [@your-twitter](https://{twitter.com/your-username})
+- Website [your-website.com](https://karobwe.dev)
+- GitHub [@your-username](https://github.com/Karobwe)
+- Twitter [@your-twitter](https://twitter.com/Karobwe)

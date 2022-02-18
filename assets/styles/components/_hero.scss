@@ -43,11 +43,12 @@
   }
 
   .testimonial {
-    position: absolute;
+    justify-self: flex-end;
+    position: relative;
     width: 300px;
     max-height: 138px;
-    left: 2.7em;
-    bottom: -5.7em;
+    left: -1em;
+    bottom: 5em;
     padding: 13px 20px;
     display: flex;
     flex-direction: column;

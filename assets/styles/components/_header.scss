@@ -1,4 +1,5 @@
 @import "../utils/variables";
+@import "../utils/mixins";
 
 header {
   .menu {
@@ -15,6 +16,7 @@ header {
       font-size: $text-md;
       text-align: center;
       text-transform: uppercase;
+      text-decoration: none;
       line-height: $leading-2xl;
 
       color: grey;
@@ -28,10 +30,31 @@ header {
       color: $white;
       background: none;
       z-index: 100;
+
+      @include media-gte-lg {
+        display: none;
+      }
     }
 
     .menu-collapse {
       display: none;
+
+      @include media-gte-lg {
+        display: block;
+      }
+
+      ul {
+        @include media-gte-lg {
+          display: flex;
+          column-gap: 86px;
+        }
+      }
+
+      li.active {
+        text-decoration: underline;
+        text-underline-position: under;
+        text-underline-offset: 8px;
+      }
     }
 
     .menu-collapse.opened {
@@ -46,12 +69,6 @@ header {
 
       li {
         margin: 32px auto;
-      }
-
-      li.active {
-        text-decoration: underline;
-        text-underline-position: under;
-        text-underline-offset: 8px;
       }
     }
 
